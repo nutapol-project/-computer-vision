@@ -1,5 +1,9 @@
 # SortSense — ระบบตรวจจับและแนะนำถังขยะ
 
+## Colab demo (Capstone Q3)
+รันได้ทันทีไม่ต้องตั้งค่าอะไรเพิ่ม: https://colab.research.google.com/github/nutapol-project/-computer-vision/blob/main/colab_demo.ipynb
+clone repo นี้และแตก `data/dataset_waste_real_v3_hazard_single.zip` อัตโนมัติ แล้วรัน inference จริงด้วย `best.pt` บนภาพ Test จริง (success case + honest failure case) มีเซลล์ optional สำหรับ retrain YOLOv8n baseline จากศูนย์ด้วย
+
 ## ติดตั้งบนเครื่องใหม่ (Windows)
 ติดตั้ง Python 3.12 แล้วเปิด Terminal ในโฟลเดอร์โปรเจกต์ รัน:
 ```cmd
