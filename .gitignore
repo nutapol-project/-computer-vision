@@ -24,3 +24,5 @@ yolov8n.pt
 report/node_modules/
 report/package-lock.json
 report/package.json
+report/video_work/
+~$*
