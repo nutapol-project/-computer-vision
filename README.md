@@ -39,6 +39,18 @@ py -3.12 -m venv .venv
 - เปิด review.html, review-new.html และ review-oct13.html ในโฟลเดอร์ข้อมูลเพื่อตรวจกรอบ
 - data.yaml ที่โฟลเดอร์หลักปัจจุบันชี้ไป v3
 
+## Baseline comparison (capstone evaluation)
+เพื่อเทียบ "โมเดลหลัก" กับ "baseline" บน Test set เดียวกัน (dataset_waste_real_v3_hazard_single):
+1. รัน `kaggle_train_waste_real_v3_hazard_single.ipynb` บน Kaggle/Colab GPU — นี่คือ baseline (YOLOv8n ขนาดเล็ก เริ่มจาก yolov8n.pt pretrained) ได้ `test-metrics.json`
+2. รัน `kaggle_train_waste_real_v3_yolov8m.ipynb` — เหมือน notebook แรกทุกอย่าง (seed=42, epochs=100, patience=25, batch=8, imgsz=640) ต่างกันแค่เริ่มจาก yolov8m.pt (ใหญ่กว่า) ได้ `test-metrics-yolov8m.json`
+3. ดาวน์โหลดทั้งสองไฟล์มาไว้เครื่องเดียวกัน แล้วรัน:
+```cmd
+.venv\Scripts\python.exe compare_models.py --baseline test-metrics.json --main test-metrics-yolov8m.json
+```
+ได้ตาราง precision/recall/mAP50/mAP50-95 เทียบ baseline กับโมเดลหลัก สำหรับใส่ในรายงาน Q2
+
+หมายเหตุ: ตัวเลข YOLOv8n/v3 และ YOLOv8m/v2 ที่อ้างในสไลด์เดิม (presentation-images, presentation-v2) เทรนบนชุดข้อมูลคนละเวอร์ชัน เทียบตรงกันไม่ได้ — ให้ใช้ผลจากขั้นตอนด้านบนซึ่งเทรนบนชุด v3 เดียวกันทั้งคู่แทน
+
 ## ไฟล์สำคัญ
 - web/: หน้าเว็บ ภาพตัวอย่าง และรูปถัง
 - web_app.py: เซิร์ฟเวอร์และระบบตรวจจับ
