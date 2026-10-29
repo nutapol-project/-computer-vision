@@ -1,0 +1,9 @@
+path: .
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: Recyclable
+  1: Organic
+  2: General
+  3: Hazardous

@@ -1,0 +1,15 @@
+{
+  "images": 200,
+  "boxes": 229,
+  "splits": {
+    "train": 151,
+    "val": 25,
+    "test": 24
+  },
+  "val_class_images": {
+    "Recyclable": 10,
+    "Organic": 5,
+    "General": 5,
+    "Hazardous": 5
+  }
+}

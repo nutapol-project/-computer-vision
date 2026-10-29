@@ -1,0 +1,67 @@
+{
+  "base": "dataset_waste_real_v2",
+  "removed_from_val": [
+    "H45",
+    "H68"
+  ],
+  "retained_hazard_val": [
+    "H53"
+  ],
+  "added": [
+    {
+      "filename": "H_single_07.jpg",
+      "source": "archive.zip::Hazardous/Hazardous/e-waste/cfl_app - Copy.jpg",
+      "sha256": "168eeea8a8d7797147c73089f915cbb39a54019323ac50ebe2198dab5a64a38a",
+      "class": "Hazardous",
+      "box_xyxy_normalized": [
+        0.26,
+        0.085,
+        0.7,
+        0.965
+      ],
+      "review": "AI visual review; human confirmation recommended"
+    },
+    {
+      "filename": "H_single_16.jpg",
+      "source": "archive.zip::Hazardous/Hazardous/pesticides/img-pesticides.jpg",
+      "sha256": "0613a9fc03cb162f4d2668f92abbd22e5870d275447be49e75f71dd2a2c69f4c",
+      "class": "Hazardous",
+      "box_xyxy_normalized": [
+        0.452,
+        0.02,
+        0.668,
+        0.958
+      ],
+      "review": "AI visual review; human confirmation recommended"
+    },
+    {
+      "filename": "H_single_28.jpg",
+      "source": "archive.zip::Hazardous/Hazardous/e-waste/spiral-20-23-watt-cfl-bulbs - Copy.jpg",
+      "sha256": "32cbf0d6bc6b6d6f8fbddc64a61b737bbf18a124fecb7a9b1016295acb5e0ef7",
+      "class": "Hazardous",
+      "box_xyxy_normalized": [
+        0.215,
+        0.077,
+        0.7,
+        0.844
+      ],
+      "review": "AI visual review; human confirmation recommended"
+    },
+    {
+      "filename": "H_single_42.jpg",
+      "source": "archive.zip::Hazardous/Hazardous/paints/soldier-paints-solvant-thinner-500x500.jpg",
+      "sha256": "4aad4839143fa5ab04fc8193af3d8d5653489a9a1c2b7620f874565e1ed8e4df",
+      "class": "Hazardous",
+      "box_xyxy_normalized": [
+        0.148,
+        0.01,
+        0.858,
+        0.99
+      ],
+      "review": "AI visual review; human confirmation recommended"
+    }
+  ],
+  "train_test_unchanged": true,
+  "selection": "single target object, no model prediction used; seeded source candidate order 20261014",
+  "comparison_warning": "Changed evaluation distribution; new scores not directly comparable with original validation."
+}
