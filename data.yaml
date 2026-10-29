@@ -1,0 +1,10 @@
+# Class order must match every annotation.
+path: dataset_waste_real_v3_hazard_single
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: Recyclable
+  1: Organic
+  2: General
+  3: Hazardous
