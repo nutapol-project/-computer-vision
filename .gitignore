@@ -1,0 +1,23 @@
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+
+# Runtime outputs, logs, local secrets (TLS keys, sqlite db, tunnel logs)
+outputs/
+runs/
+
+# Packaged artifacts not needed to reproduce training (slides, zips, bundled submissions)
+*.zip
+presentation-v2/
+presentation-images/
+submission-separated/
+tools/
+Ultralytics/
+
+# Raw dataset images/labels — large binaries, see README for the dataset pointer
+dataset_waste_real_v3_hazard_single/images/
+dataset_waste_real_v3_hazard_single/labels/
+
+# Generic pretrained starting checkpoint (auto-downloaded by ultralytics); best.pt (our trained weights) is tracked
+yolov8n.pt
