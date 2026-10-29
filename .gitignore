@@ -9,6 +9,8 @@ runs/
 
 # Packaged artifacts not needed to reproduce training (slides, zips, bundled submissions)
 *.zip
+# Exception: dataset bundle needed so the Colab demo notebook is self-contained (git clone + unzip)
+!data/dataset_waste_real_v3_hazard_single.zip
 presentation-v2/
 presentation-images/
 submission-separated/
