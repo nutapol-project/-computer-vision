@@ -21,3 +21,6 @@ dataset_waste_real_v3_hazard_single/labels/
 
 # Generic pretrained starting checkpoint (auto-downloaded by ultralytics); best.pt (our trained weights) is tracked
 yolov8n.pt
+report/node_modules/
+report/package-lock.json
+report/package.json
